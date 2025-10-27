@@ -1,5 +1,5 @@
 
-Sub RepeatScanAmplitude()
+Sub MAIN
 	Dim ampList As Variant
 	Dim amp As Double
 	Dim i As Integer
