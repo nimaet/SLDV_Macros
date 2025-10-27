@@ -1,0 +1,25 @@
+'#Language "WWB-COM"
+
+Option Explicit
+
+Sub Main
+     Dim oAuxIn As DigitalPort
+     Dim oAuxOut As DigitalPort
+
+     Set oAuxIn = Application.DigitalPorts(ptcDigitalPortIn1)
+     Set oAuxOut = Application.DigitalPorts(ptcDigitalPortOut1)
+
+     oAuxOut.Value = True
+     If (oAuxIn.Value <> True) Then
+          MsgBox "Please connect Aux In and Aux Out!"
+          Exit Sub
+     End If
+
+     oAuxOut.Value = False
+     If (oAuxIn.Value <> False) Then
+          MsgBox "Please connect Aux In and Aux Out!"
+          Exit Sub
+     End If
+
+     MsgBox "AuxIn / AuxOut Test succeeded!"
+End Sub
