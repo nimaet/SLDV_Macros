@@ -8,7 +8,7 @@ Sub RepeatScanAmplitude()
 	
 	' === USER SETTINGS ===
 	basePath = "D:\Nima\Metamaterial beam\dat_Oct\27\"  ' save location
-	ampList = Array(0.5, 1.0, 1.5, 2.0)  ' excitation amplitudes (V)
+	ampList = Array(0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.35, 0.4)  ' excitation amplitudes (V)
 	
 	' === PREPARE ===
 	App.ActiveMeasurement.Stop
